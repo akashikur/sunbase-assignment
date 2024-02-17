@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  width: 100%;
+  height: 60px;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+}
+header .save {
+  padding: 8px 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+.save:hover {
+  background-color: rgba(0, 0, 255, 0.618);
+  color: white;
+  transition: all 0.3s;
+  border: none;
+}
+header p {
+  font-size: 19px;
+}
+.container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: space-between;
+}
+.actions {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.actions .comp {
+  padding: 10px 20px;
+  font-size: 25px;
+}
+.action-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  background-color: #f2ecff;
+  padding: 15px;
+}
+.actions button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.actions button span {
+  font-size: 30px;
+}
+.form-container {
+  background-color: #d5d5d5;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container form {
+  background-color: white;
+  width: 50%;
+  height: 98%;
+  border-radius: 5px;
+  padding: 30px;
+  overflow: auto;
+}
+.form-element {
+  padding: 15px;
+  cursor: move;
+  display: flex;
+  flex-direction: column;
+}
+.form-element:hover {
+  background-color: #f2ecff;
+  border-radius: 5px;
+  transform: 1s all;
+}
+
+.form-element div {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-element label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: large;
+}
+.form-element span {
+  cursor: pointer;
+}
+.form-element span:hover {
+  color: red;
+}
+
+.form-element input,
+.form-element select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #d5d5d5;
+}
+.form-element textarea {
+  margin-top: 5px;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d5d5d5;
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+.form-actions button {
+  margin-right: 10px;
+}
+.dragged-active {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1000px) {
+  .form-container form {
+    width: 70%;
+    
+}}
+@media only screen and (max-width: 750px) {
+  .form-container form {
+    width: 80%;
+
+}
+.actions button span {
+  font-size: 20px;
+}
+.form-element label {
+
+  font-size: medium;
+}
+.form-element input,
+.form-element select {
+  width: 100%;
+  padding: 10px;
+ 
+}
+.form-element textarea {
+  height: 100px;
+  padding: 10px;
+ 
+}
+.form-element {
+  padding: 10px;
+
+}
+.actions .comp {
+  font-size: 20px;
+}
+.action-btn {
+  
+  padding: 10px;
+}
+.actions button {
+
+  padding: 3px 10px;
+
+  font-size: 13px;
+}
+}
